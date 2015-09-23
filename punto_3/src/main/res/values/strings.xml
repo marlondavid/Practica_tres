@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calcular Nota</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="mensaje">Digita tus Notas...</string>
+    <string name="quices">Quices:</string>
+    <string name="expo">Exposiciones:</string>
+    <string name="labs">Laboratorios:</string>
+    <string name="proyect">Proyecto Final:</string>
+    <string name="boton">Calcular</string>
+    <string name="nota">Nota Final:</string>
+    <string name="result">Resultado</string>
+    <string name="quince">15%</string>
+    <string name="diez">10%</string>
+    <string name="cuarenta">40%</string>
+    <string name="trein">35%</string>
+</resources>

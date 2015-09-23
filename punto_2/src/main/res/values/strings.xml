@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculadora Básica</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="op1">1er Operador:</string>
+    <string name="in">Ingrese operador</string>
+    <string name="op2">2do Operador:</string>
+    <string name="selec">Seleccione la operación:</string>
+    <string name="checks">Sumar</string>
+    <string name="checkr">Restar</string>
+    <string name="checkm">Multiplicar</string>
+    <string name="checkd">Dividir</string>
+    <string name="boton">Calcular</string>
+    <string name="result">Resultado:</string>
+    <string name="mensaje">Aquí aparecerá el resultado</string>
+</resources>
