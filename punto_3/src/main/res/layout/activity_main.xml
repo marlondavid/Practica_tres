@@ -97,7 +97,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:numeric="decimal"
+                        android:inputType="numberDecimal"
                         android:layout_weight="1"
                         android:id="@+id/quin"
                         android:hint="@string/quince"/>
@@ -105,7 +105,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:numeric="decimal"
+                        android:inputType="numberDecimal"
                         android:layout_weight="1"
                         android:id="@+id/diez"
                         android:hint="@string/diez"/>
@@ -113,7 +113,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:numeric="decimal"
+                        android:inputType="numberDecimal"
                         android:layout_weight="1"
                         android:id="@+id/cuare"
                         android:hint="@string/cuarenta"/>
@@ -121,7 +121,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:numeric="decimal"
+                        android:inputType="numberDecimal"
                         android:layout_weight="1"
                         android:id="@+id/trint"
                         android:hint="@string/trein"/>
@@ -171,14 +171,13 @@
                     android:textSize="25dp"
                     android:gravity="center"/>
 
-                <EditText
+                <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:numeric="decimal"
+                    android:textSize="25dp"
                     android:gravity="center"
                     android:id="@+id/result"
-                    android:hint="@string/result"
-                    />
+                    android:hint="@string/result"/>
 
             </LinearLayout>
 

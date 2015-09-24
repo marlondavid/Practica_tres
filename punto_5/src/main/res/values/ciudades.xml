@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ciudades">
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Medellin</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Pereira</item>
+        <item>Cucuta</item>
+        <item>Bucaramanga</item>
+        <item>Manizales</item>
+        <item>Neiva</item>
+        <item>Tunja</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Ibague</item>
+        <item>Armenia</item>
+    </string-array>
+
+
+</resources>

@@ -1,5 +1,20 @@
 <resources>
-    <string name="app_name">punto_5</string>
-    <string name="action_settings">Settings</string>
-
+    <string name="app_name">Formulario</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="tittle">Formulario de Inscripción!!!</string>
+    <string name="tnombre">Nombres:</string>
+    <string name="tapellido">Apellidos:</string>
+    <string name="tid">Identificación:</string>
+    <string name="tsexo">Sexo:</string>
+    <string name="checkf">Femenino</string>
+    <string name="checkm">Masculino</string>
+    <string name="tfecha">Fecha de Nacimiento:</string>
+    <string name="tlugar">Lugar de Nacimiento:</string>
+    <string name="thobbie">¿Qué hace en su tiempo libre?</string>
+    <string name="boxbailar">Bailar</string>
+    <string name="boxdeport">Deporte</string>
+    <string name="boxDormi">Dormir</string>
+    <string name="boxnada">No Tiene</string>
+    <string name="thob">Hobbie:</string>
+    <string name="boton">ALMACENAR</string>
 </resources>
