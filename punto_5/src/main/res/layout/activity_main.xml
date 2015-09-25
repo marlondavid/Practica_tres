@@ -104,21 +104,29 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="@string/checkf"
-                    android:paddingRight="45dp"
-                    android:textColor="@color/palevioletred"
-                    android:id="@+id/ifemenino"/>
-                <RadioButton
+
+                <RadioGroup
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="@string/checkm"
-                    android:textColor="@color/green"
-                    android:id="@+id/imasculino"/>
+                    android:orientation="horizontal"
+                    android:id="@+id/gen">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/checkf"
+                        android:paddingRight="45dp"
+                        android:textColor="@color/palevioletred"
+                        android:id="@+id/ifemenino"/>
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/checkm"
+                        android:textColor="@color/green"
+                        android:id="@+id/imasculino"/>
+                </RadioGroup>
+
             </LinearLayout>
 
             <LinearLayout

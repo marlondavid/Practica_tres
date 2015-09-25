@@ -63,7 +63,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="0.25"
+            android:layout_weight="0.6"
             android:orientation="vertical"
             >
 
@@ -92,8 +92,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:inputType="numberDecimal"
+                android:id="@+id/radio"
                 android:layout_weight="1"
-                android:id="@+id/radio"/>
+                />
 
         </LinearLayout>
 
@@ -130,7 +131,8 @@
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/area">
 
                 <RadioButton
                     android:layout_width="fill_parent"
@@ -211,7 +213,7 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="0.7"
                     android:gravity="center"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:id="@+id/result"
                     android:hint="@string/result"/>
 

@@ -10,8 +10,11 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Almacenar;
     private CheckBox h1,h2,h3,h4;
     private RadioButton hombre,mujer;
+    private RadioGroup genero;
     private DatePicker date;
     private Spinner ciudad;
     private TextView imp1,imp2,imp3,imp4,imp5,imp6,imp7;
@@ -26,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private String nombre, apellido, id,sex, fecha, lugar,hobbie;
     private int n,a,i,sexo=0,hob=0;
     private int dia,mes,año;
+
 
 
     @Override
@@ -37,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Id=(EditText) findViewById(R.id.iid);
         hombre= (RadioButton) findViewById(R.id.imasculino);
         mujer= (RadioButton) findViewById(R.id.ifemenino);
+        genero=(RadioGroup) findViewById(R.id.gen);
         Almacenar= (Button) findViewById(R.id.boton);
         h1= (CheckBox) findViewById(R.id.ih1);
         h2= (CheckBox) findViewById(R.id.ih2);
@@ -64,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     apellido = Apellido.getText().toString();
                     id = Id.getText().toString();
                     dia = date.getDayOfMonth();
-                    mes = date.getMonth()+1;
+                    mes = date.getMonth() + 1;
                     año = date.getYear();
                     fecha = dia + "/" + mes + "/" + año;
                     lugar = ciudad.getSelectedItem().toString();
@@ -87,41 +93,32 @@ public class MainActivity extends AppCompatActivity {
                     h3.setChecked(false);
                     h4.setChecked(false);
                     sexo = 0;
-                    hob=0;
-
+                    hob = 0;
+                } else {
+                    Toast.makeText(MainActivity.this, "Por Favor Llene todos los Campos!!!", Toast.LENGTH_LONG).show();
                 }
             }
         });
-        hombre.setOnClickListener(new View.OnClickListener() {
+
+        genero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                if (mujer.isChecked()) {
-                    sex="Mujer";
-                    hombre.setChecked(false);
-                    sexo=1;
-                } else if (hombre.isChecked()) {
-                    sex="Hombre";
-                    mujer.setChecked(false);
-                    sexo=1;
-                }else
-                    sexo=0;
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch(checkedId){
+                    case R.id.imasculino:
+                        sex="Hombre";
+                        sexo=1;
+                        break;
+                    case R.id.ifemenino:
+                        sex="Mujer";
+                        sexo=1;
+                        break;
+                    default:
+                        sexo=0;
+                        break;
+                }
             }
         });
-        mujer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(mujer.isChecked()){
-                    sex="Mujer";
-                    hombre.setChecked(false);
-                    sexo=1;
-                }else if (hombre.isChecked()){
-                    sex="Hombre";
-                    mujer.setChecked(false);
-                    sexo=1;
-                }else
-                    sexo=0;
-            }
-        });
+
         h1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
